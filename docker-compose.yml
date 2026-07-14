@@ -1,0 +1,7 @@
+services:
+  portfolio:
+    build: .
+    container_name: portfolio-andresgarces
+    ports:
+      - "8080:80" # Change the port if you have it occupied
+    restart: unless-stopped
