@@ -1,7 +1,13 @@
+import AboutSection from "../components/AboutSection";
+import BeyondCodeSection from "../components/BeyondCodeSection";
+import ContactSection from "../components/ContactSection";
+
 const HomeLanding = () => {
   return (
     <div className="max-h-full">
-      <h1>Welcome!</h1>
+      <AboutSection />
+      <ContactSection />
+      <BeyondCodeSection />
     </div>
   );
 };
