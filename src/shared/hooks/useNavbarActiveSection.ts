@@ -4,32 +4,29 @@ export function useNavbarActiveSection(sectionIds: string[]) {
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleSections = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+    const handleScroll = () => {
+      const viewportCenter = window.innerHeight / 2;
+      let current = "";
 
-        if (visibleSections.length > 0) {
-          setActiveSection(visibleSections[0].target.id);
-        } else {
-          setActiveSection("");
+      for (const id of sectionIds) {
+        const section = document.getElementById(id);
+
+        if (!section) continue;
+
+        const rect = section.getBoundingClientRect();
+
+        if (rect.top <= viewportCenter && rect.bottom >= viewportCenter) {
+          current = id;
         }
-      },
-      {
-        threshold: [0.2, 0.4, 0.6, 0.8],
-      },
-    );
-
-    sectionIds.forEach((id) => {
-      const element = document.getElementById(id);
-
-      if (element) {
-        observer.observe(element);
       }
-    });
 
-    return () => observer.disconnect();
+      setActiveSection(current);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [sectionIds]);
 
   return activeSection;
