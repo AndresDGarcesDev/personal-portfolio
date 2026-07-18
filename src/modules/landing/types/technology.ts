@@ -1,4 +1,4 @@
-import type { TechnologyCategory } from "./tecnnology-category";
+import type { TechnologyCategory } from "./technology-category";
 
 export type TechnologyLevel = "Profesional" | "Avanzado" | "Aprendizaje";
 

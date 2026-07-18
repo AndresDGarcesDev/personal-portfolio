@@ -4,7 +4,7 @@ import { technologies } from "../data/technologies";
 import TechnologyCard from "./technology/TechnologyCard";
 import { technologyCategories } from "../utils/technologyCategories";
 import { HugeiconsIcon } from "@hugeicons/react";
-import type { TechnologyCategory } from "../types/tecnnology-category";
+import type { TechnologyCategory } from "../types/technology-category";
 
 export default function TechnologySection() {
   const [selectedCategory, setSelectedCategory] =

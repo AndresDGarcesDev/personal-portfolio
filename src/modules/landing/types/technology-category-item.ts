@@ -1,5 +1,5 @@
 import type { IconSvgElement } from "@hugeicons/react";
-import type { TechnologyCategory } from "./tecnnology-category";
+import type { TechnologyCategory } from "./technology-category";
 
 export interface TechnologyCategoryItem {
   value: TechnologyCategory | "featured";
