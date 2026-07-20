@@ -1,7 +1,7 @@
 import { useState } from "react";
 import HeroMetricCard from "./hero/MetricData";
 import { metrics } from "../data/metrics-data";
-import ContactTerminal from "./hero/terminal/TerminalModal";
+import TerminalModal from "./hero/terminal/TerminalModal";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
   CheckCircle,
@@ -55,7 +55,7 @@ export default function HeroSection() {
                 <HugeiconsIcon icon={TerminalIcon} />
                 Abrir terminal
               </button>
-              <ContactTerminal
+              <TerminalModal
                 open={isTerminalOpen}
                 onClose={() => setIsTerminalOpen(false)}
               />
