@@ -11,7 +11,7 @@ export default function CourseSection() {
         subtitle="Supplementary courses"
       />
       <div className="px-15 mb-5">
-        <p className="text-lg text-center">
+        <p className="text-lg text-center text-text-secondary">
           Cada año procuro profundizar en una{" "}
           <span className="font-bold">tecnología o disciplina</span> que
           complemente mi experiencia profesional. Mi objetivo no es acumular

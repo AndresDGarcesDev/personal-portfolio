@@ -1,6 +1,84 @@
-/* Dark Theme */
-@theme {
-  --color-background: #0b0f19;
-  --font-sans: "Inter", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+:root {
+  /* Backgrounds */
+  --background: #f8fafc;
+  --surface: #d8d9db;
+  --surface-hover: #f1f5f9;
+  --background-btn: #255dc4;
+  --background-btn-hover: #2050a8;
+
+  /* Text */
+  --text-primary: #0f172a;
+  --text-secondary: #36404e;
+  --text-muted: #64748b;
+  --text-title-section: #255dc4;
+  --text-btn: #ffffff;
+
+  /* Borders */
+  --border: #afb2b6;
+  --border-section: #1b1b1d;
+  --border-hover: #255dc4;
+
+  /* Brand */
+  --primary: #255dc4;
+  --primary-hover: #2153b1;
+
+  /* Status */
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+}
+
+.dark {
+  /* Backgrounds */
+  --background: #0b0f19;
+  --surface: #111827;
+  --surface-hover: #1f2937;
+  --background-btn: #22d3ee;
+  --background-btn-hover: #1aadc4;
+
+  /* Text */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-title-section: #22d3ee;
+  --text-btn: #000000;
+
+  /* Borders */
+  --border: #374151;
+  --border-section: #d4d4db;
+  --border-hover: #22d3ee;
+
+  /* Brand */
+  --primary: #22d3ee;
+  --primary-hover: #22d3ee;
+
+  /* Status */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-background-btn: var(--background-btn);
+  --color-background-btn-hover: var(--background-btn-hover);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-text-title-section: var(--text-title-section);
+  --color-text-btn: var(--text-btn);
+
+  --color-border: var(--border);
+  --color-border-section: var(--border-section);
+  --color-border-hover: var(--border-hover);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
 }

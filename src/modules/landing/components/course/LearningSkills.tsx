@@ -8,7 +8,7 @@ interface Props {
 export default function LearningSkills({ skills }: Props) {
   return (
     <section className="mt-8">
-      <h4 className="mb-4 text-sm uppercase tracking-widest text-slate-500">
+      <h4 className="mb-4 text-sm uppercase font-semibold tracking-widest text-text-primary">
         Competencias
       </h4>
       <div className="space-y-3">
@@ -17,9 +17,9 @@ export default function LearningSkills({ skills }: Props) {
             <HugeiconsIcon
               icon={CheckmarkCircle02Icon}
               size={18}
-              className="text-cyan-400"
+              className="text-primary"
             />
-            <span>{skill}</span>
+            <span className="text-text-secondary">{skill}</span>
           </div>
         ))}
       </div>

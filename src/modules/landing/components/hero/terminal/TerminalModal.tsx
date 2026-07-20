@@ -27,19 +27,19 @@ export default function ContactTerminal({ open, onClose }: Props) {
               icon={CircleDot}
               size={12}
               fill="#ef4444"
-              className="text-red-500"
+              className="text-danger"
             />
             <HugeiconsIcon
               icon={CircleDot}
               size={12}
               fill="#f59e0b"
-              className="text-yellow-500"
+              className="text-warning"
             />
             <HugeiconsIcon
               icon={CircleDot}
               size={12}
               fill="#22c55e"
-              className="text-green-500"
+              className="text-success"
             />
           </div>
           <span className="text-xs uppercase tracking-widest text-slate-400">

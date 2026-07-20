@@ -15,14 +15,14 @@ export default function AboutSection() {
       <SectionTitle title="Sobre mí" subtitle="About me" />
       <div className="grid gap-20 lg:grid-cols-2">
         <div>
-          <h3 className="mt-4 pb-10 text-5xl font-bold text-white">
+          <h3 className="mt-4 pb-10 text-5xl font-bold text-text-primary">
             Construyo software pensado para crecer.
           </h3>
-          <p className="pt-2 text-lg leading-8 text-gray-200">
+          <p className="pt-2 text-lg leading-8 text-text-secondary">
             Soy desarrollador Full Stack con experiencia en el desarrollo de
             aplicaciones web, móviles y servicios backend escalables.
           </p>
-          <p className="py-2 text-lg leading-8 text-gray-200">
+          <p className="py-2 text-lg leading-8 text-text-secondary">
             Me enfoco en crear soluciones mantenibles, optimizadas y alineadas
             con las necesidades del negocio utilizando tecnologías modernas como
             .NET, Spring Boot, React, Angular y React Native. Disfruto diseñar
@@ -30,7 +30,7 @@ export default function AboutSection() {
             continuamente nuevas tecnologías para ofrecer productos de alta
             calidad.
           </p>
-          <hr />
+          <hr className="border-border-section" />
           <p className="pt-2 text-lg leading-8 text-gray-400/95">
             "Mi objetivo no es solamente escribir código. Busco diseñar software
             que sea escalable, mantenible y que genere valor para las personas

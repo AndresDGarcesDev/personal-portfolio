@@ -4,11 +4,11 @@ interface Props {
 
 export default function LearningGoal({ goal }: Props) {
   return (
-    <section className="min-h-36 rounded-xl border border-cyan-500/20 p-5">
-      <h4 className="text-xs uppercase tracking-widest text-cyan-400">
+    <section className="min-h-36 rounded-xl border border-border-section p-5">
+      <h4 className="text-xs uppercase font-semibold tracking-widest text-text-primary">
         Lo que buscaba
       </h4>
-      <p className="mt-3 text-slate-300">{goal}</p>
+      <p className="mt-3 text-text-secondary">{goal}</p>
     </section>
   );
 }

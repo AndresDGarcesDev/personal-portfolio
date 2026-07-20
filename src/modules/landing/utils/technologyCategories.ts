@@ -1,13 +1,13 @@
 import {
   Award01Icon,
-  CodeIcon,
   ApiIcon,
-  BrowserIcon,
   DatabaseIcon,
   CloudIcon,
   ToolboxIcon,
   PackageIcon,
   SmartPhoneIcon,
+  CodeXmlIcon,
+  WebDesign02Icon,
 } from "@hugeicons/core-free-icons";
 import type { TechnologyCategoryItem } from "../types/technology-category-item";
 
@@ -25,7 +25,7 @@ export const technologyCategories: TechnologyCategoryItem[] = [
     label: "Lenguajes",
     title: "Lenguajes de programación",
     description: "Base para el desarrollo backend, frontend y automatización.",
-    icon: CodeIcon,
+    icon: CodeXmlIcon,
   },
   {
     value: "backend",
@@ -40,7 +40,7 @@ export const technologyCategories: TechnologyCategoryItem[] = [
     label: "Frontend",
     title: "Desarrollo Frontend",
     description: "Interfaces modernas, accesibles y responsivas.",
-    icon: BrowserIcon,
+    icon: WebDesign02Icon,
   },
   {
     value: "database",

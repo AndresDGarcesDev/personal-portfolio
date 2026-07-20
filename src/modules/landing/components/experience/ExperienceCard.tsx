@@ -17,7 +17,7 @@ export default function ExperienceCard({ experience, align }: Props) {
         </div>
       )}
       <div className="absolute left-4 top-8 md:left-1/2 md:-translate-x-1/2">
-        <div className="h-6 w-6 rounded-full border-4 border-slate-900 bg-cyan-400" />
+        <div className="h-6 w-6 rounded-full border-4 border-slate-900 bg-background-btn" />
       </div>
       {isRight && (
         <div className="pl-12 md:col-start-2 md:pl-16">

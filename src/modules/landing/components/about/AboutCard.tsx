@@ -15,23 +15,23 @@ export default function AboutCard({
         rounded-2xl
         border
         border-slate-800
-        bg-slate-900/60
+        bg-surface
         p-6
         transition-all
         duration-300
         hover:-translate-y-1
-        hover:border-cyan-400
+        hover:border-border-hover
         hover:shadow-lg
         ${className}
       `}
     >
       {Icon && (
-        <div className="mb-5 inline-flex rounded-xl bg-cyan-500/10 p-3 text-cyan-400">
+        <div className="mb-5 inline-flex rounded-xl bg-cyan-500/10 p-3 text-primary">
           <HugeiconsIcon icon={Icon} size={28} />
         </div>
       )}
-      <h2 className="text-xl font-semibold text-white">{title}</h2>
-      <p className="mt-3 leading-7 text-slate-400">{text}</p>
+      <h2 className="text-xl font-semibold text-text-primary">{title}</h2>
+      <p className="mt-3 leading-7 text-text-secondary">{text}</p>
       {children && <div className="mt-6">{children}</div>}
     </div>
   );

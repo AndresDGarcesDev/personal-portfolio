@@ -13,14 +13,14 @@ export default function LearningStageHeader({ stage }: Props) {
         <HugeiconsIcon
           icon={learningIcons[stage.category]}
           size={34}
-          className="text-cyan-400"
+          className="text-primary"
         />
-        <h3 className="pl-3 text-3xl font-bold text-cyan-400">{stage.title}</h3>
+        <h3 className="pl-3 text-3xl font-bold text-text-primary">{stage.title}</h3>
       </div>
-      <p className="mt-1 uppercase tracking-widest text-slate-500">
+      <p className="mt-1 uppercase tracking-widest text-text-secondary">
         {stage.period}
       </p>
-      <p className="mt-6 min-h-20 text-slate-300">{stage.description}</p>
+      <p className="mt-6 min-h-20 text-text-secondary">{stage.description}</p>
     </header>
   );
 }

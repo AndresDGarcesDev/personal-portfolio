@@ -31,15 +31,19 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${useNavbarScroll() ? "bg-slate-800/40 backdrop-blur-md shadow-lg text-white" : "bg-transparent text-white"}`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-100 ${
+        useNavbarScroll()
+          ? "bg-background/80 backdrop-blur-md shadow-lg text-text-primary"
+          : "bg-transparent text-text-primary"
+      }`}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-12">
         <div className="flex items-center justify-between h-16">
-          <div className="text-center justify-center">
+          <div className="text-center text-text-primary justify-center">
             <p className="text-xl">Andrés Garcés</p>
             <span className="text-lg">Software Developer</span>
           </div>
-          <div className="hidden md:flex items-center gap-8 border rounded-4xl px-5 py-1">
+          <div className="hidden md:flex items-center gap-8 border border-border rounded-4xl px-5 py-1">
             {navbarItems.map((item) => {
               return (
                 <a
@@ -47,12 +51,12 @@ export default function Navbar() {
                   href={item.href}
                   className={`transition-colors ${
                     activeSection === item.id
-                      ? "text-gray-300 underline"
-                      : "hover:text-gray-400"
+                      ? "text-text-primary underline"
+                      : "hover:text-gray-600"
                   } inline-flex items-center px-1`}
                 >
-                  {item.icon && <HugeiconsIcon icon={item.icon} size={19} />}
-                  <p className="pl-1">{item.label}</p>
+                  {item.icon && <HugeiconsIcon icon={item.icon} size={19} className="text-text-primary" />}
+                  <p className="pl-1 text-text-primary">{item.label}</p>
                 </a>
               );
             })}

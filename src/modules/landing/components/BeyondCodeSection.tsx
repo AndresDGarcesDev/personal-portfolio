@@ -8,7 +8,7 @@ export default function BeyondCodeSection() {
       <div className="pt-10 text-center">
         <SectionTitle title="Más allá del código" subtitle="Beyond the Code" />
 
-        <samp>
+        <samp className="text-text-primary">
           "Las mejores soluciones nacen cuando aprendes también fuera del
           software."
         </samp>
@@ -20,8 +20,8 @@ export default function BeyondCodeSection() {
         ))}
       </div>
 
-      <p className="pt-5 text-sm">
-        <span className="text-red-400">*</span> Mi objetivo es comunicar ideas
+      <p className="pt-5 text-sm text-text-primary">
+        <span className="text-danger">*</span> Mi objetivo es comunicar ideas
         técnicas con la misma claridad en inglés que actualmente lo hago en
         español.
       </p>

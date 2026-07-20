@@ -7,7 +7,7 @@ interface Props {
 export default function LearningCourses({ courses }: Props) {
   return (
     <section className="mt-8">
-      <h4 className="mb-4 text-sm uppercase tracking-widest text-slate-500">
+      <h4 className="mb-4 text-sm uppercase font-semibold tracking-widest text-text-primary">
         Cómo lo hice
       </h4>
       <div className="space-y-2">
@@ -16,8 +16,8 @@ export default function LearningCourses({ courses }: Props) {
             key={course.id}
             className="rounded-lg border border-slate-700 p-3"
           >
-            <h5 className="font-medium">{course.nameCourse}</h5>
-            <p className="text-sm text-slate-500">{course.platformCourse}</p>
+            <h5 className="font-medium text-text-primary">{course.nameCourse}</h5>
+            <p className="text-sm text-text-secondary">{course.platformCourse}</p>
           </div>
         ))}
       </div>

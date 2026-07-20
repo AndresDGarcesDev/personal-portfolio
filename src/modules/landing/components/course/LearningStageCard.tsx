@@ -15,7 +15,7 @@ interface Props {
 export default function LearningStageCard({ stage, courses }: Props) {
   return (
     <article className="h-full">
-      <div className="mx-3 group flex h-full flex-col rounded-2xl border border-slate-800 bg-white/5 p-8 my-2 md:my-0 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400">
+      <div className="mx-3 group flex h-full flex-col rounded-2xl border border-slate-800 bg-white/5 p-8 my-2 md:my-0 transition-all duration-300 hover:-translate-y-2 hover:border-border-hover">
         <LearningStageHeader stage={stage} />
         <LearningGoal goal={stage.goal} />
         <LearningSkills skills={stage.skills} />

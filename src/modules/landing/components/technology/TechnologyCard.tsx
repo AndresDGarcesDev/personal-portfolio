@@ -6,13 +6,13 @@ interface Props {
 }
 export default function TechnologyCard({ technology }: Props) {
   return (
-    <article className="group rounded-xl border border-slate-800 bg-slate-900/40 p-5">
+    <article className="group rounded-xl border border-slate-800 bg-surface p-5">
       <header className="flex justify-between">
-        <h3>{technology.name}</h3>
-        <Badge>{technology.level}</Badge>
+        <h3 className="text-text-primary font-bold">{technology.name}</h3>
+        <Badge variant="info">{technology.level}</Badge>
       </header>
-      <p className="mt-4 text-sm text-slate-400">{technology.description}</p>
-      <footer className="mt-5">
+      <p className="mt-4 text-sm text-text-primary">{technology.description}</p>
+      <footer className="mt-5 text-text-secondary">
         {technology.years}{" "}
         años de experiencia
       </footer>

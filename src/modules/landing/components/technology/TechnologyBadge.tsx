@@ -11,5 +11,5 @@ interface Props {
 }
 
 export default function TechnologyBadge({ children }: Props) {
-  return <span>{children}</span>;
+  return <span className="text-text-primary">{children}</span>;
 }
