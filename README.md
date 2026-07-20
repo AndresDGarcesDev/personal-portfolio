@@ -165,13 +165,13 @@ src/
 
 - [x] Landing Page
 - [x] Responsive Layout
-- [ ] Dark / Light Theme
+- [x] Dark / Light Theme
 - [ ] GSAP Animations
 - [x] Docker Support
 - [x] Contact
 - [ ] Multi-language Support
 - [ ] Lighthouse Score > 95
-- [ ] Accessibility Improvements
+- [x] Accessibility Improvements
 
 ---
 
