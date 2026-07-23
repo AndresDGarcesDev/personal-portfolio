@@ -20,7 +20,7 @@
 
 ## 📸 Preview
 
-> Screenshot coming soon...
+![screenshot-portfolio](/public/documents/screenshot-portfolio.png)
 
 ---
 
@@ -166,11 +166,11 @@ src/
 - [x] Landing Page
 - [x] Responsive Layout
 - [x] Dark / Light Theme
-- [ ] GSAP Animations
+- [x] GSAP Animations
 - [x] Docker Support
 - [x] Contact
 - [ ] Multi-language Support
-- [ ] Lighthouse Score > 95
+- [x] Lighthouse Score > 95
 - [x] Accessibility Improvements
 
 ---
