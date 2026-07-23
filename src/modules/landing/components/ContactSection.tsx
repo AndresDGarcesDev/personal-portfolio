@@ -1,12 +1,18 @@
 import SectionTitle from "../../../components/ui/title/SectionTitle";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { ArrowRight02FreeIcons } from "@hugeicons/core-free-icons";
+import { useRef } from "react";
+import { useReveal } from "../../../shared/animations/gsap";
 
 export default function ContactSection() {
+  const contactRef = useRef<HTMLElement>(null);
+  useReveal(contactRef);
+
   return (
     <section
       id="contact"
-      className="mx-auto flex max-w-7xl flex-col justify-center px-6 py-5"
+      className="mx-auto flex max-w-7xl flex-col justify-center px-6 py-20"
+      ref={contactRef}
     >
       <div className="mx-auto max-w-3xl text-center">
         <SectionTitle title="Contacto" subtitle="Contact" />
@@ -14,7 +20,10 @@ export default function ContactSection() {
           ¿Hablamos sobre tu próximo proyecto?
         </h2>
       </div>
-      <div className="mt-12 rounded-3xl border border-cyan-500/20 bg-surface p-8">
+      <div
+        className="mt-12 rounded-3xl border border-cyan-500/20 bg-surface p-8"
+        data-stagger
+      >
         <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <span className="flex items-center gap-2 text-text-secondary font-semibold">

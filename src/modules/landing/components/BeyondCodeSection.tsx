@@ -1,10 +1,18 @@
+import { useRef } from "react";
 import SectionTitle from "../../../components/ui/title/SectionTitle";
 import { beyond } from "../data/beyonds";
 import BeyondCodeCard from "./beyond/BeyondCard";
+import { useReveal } from "../../../shared/animations/gsap";
 
 export default function BeyondCodeSection() {
+  const beyondCodeRef = useRef<HTMLElement>(null);
+  useReveal(beyondCodeRef);
+
   return (
-    <section className="mx-auto flex max-w-7xl flex-col justify-center px-6 py-2">
+    <section
+      className="mx-auto flex max-w-7xl flex-col justify-center px-6 py-2"
+      ref={beyondCodeRef}
+    >
       <div className="pt-10 text-center">
         <SectionTitle title="Más allá del código" subtitle="Beyond the Code" />
 

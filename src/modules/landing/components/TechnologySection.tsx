@@ -26,7 +26,7 @@ export default function TechnologySection() {
   return (
     <section
       id="technologies"
-      className="relative mx-auto max-w-7xl px-6 pb-10"
+      className="relative mx-auto max-w-7xl px-6 py-20"
     >
       <SectionTitle
         title="Mi stack profesional"

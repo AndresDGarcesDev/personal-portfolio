@@ -4,7 +4,7 @@ import ExperienceCard from "./experience/ExperienceCard";
 
 export default function ExperienceSection() {
   return (
-    <section id="experiences" className="mx-auto max-w-7xl px-6 pt-5">
+    <section id="experiences" className="mx-auto max-w-7xl px-6 py-20">
       <SectionTitle title="Experiencia Profesional" subtitle="Career Journey" />
       <div className="relative">
         <div className="absolute left-4 md:left-1/2 top-0 h-full w-0.5 -translate-x-1/2 bg-slate-700" />

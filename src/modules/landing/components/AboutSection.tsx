@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import SectionTitle from "../../../components/ui/title/SectionTitle";
 import AboutCard from "./about/AboutCard";
 import {
@@ -8,13 +9,17 @@ import {
   LayersLogoIcon,
   LaptopPerformanceIcon,
 } from "@hugeicons/core-free-icons";
+import { useStagger } from "../../../shared/animations/gsap";
 
 export default function AboutSection() {
+  const aboutRef = useRef<HTMLElement>(null);
+  useStagger(aboutRef);
+
   return (
-    <section id="about" className="mx-auto max-w-7xl px-6 py-28">
+    <section id="about" className="mx-auto max-w-7xl px-6 py-20" ref={aboutRef}>
       <SectionTitle title="Sobre mí" subtitle="About me" />
       <div className="grid gap-20 lg:grid-cols-2">
-        <div>
+        <div data-animate>
           <h3 className="mt-4 pb-10 text-5xl font-bold text-text-primary">
             Construyo software pensado para crecer.
           </h3>
@@ -37,7 +42,7 @@ export default function AboutSection() {
             que lo utilizan."
           </p>
         </div>
-        <div className="grid gap-5 sm:grid-cols-2">
+        <div className="grid gap-5 sm:grid-cols-2" data-animate>
           <AboutCard
             icon={CodeXmlIcon}
             title="Frontend"

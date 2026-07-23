@@ -1,15 +1,13 @@
 import { useState } from "react";
 import HeroMetricCard from "./hero/MetricData";
 import { metrics } from "../data/metrics-data";
-import TerminalModal from "./hero/terminal/TerminalModal";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
-  CheckCircle,
-  CircleDot,
   DocumentAttachmentIcon,
-  SquareIcon,
   TerminalIcon,
 } from "@hugeicons/core-free-icons";
+import TerminalHero from "./hero/terminal/terminal-hero/TerminalHero";
+import TerminalModal from "./hero/terminal/terminal-modal/TerminalModal";
 
 export default function HeroSection() {
   const [isTerminalOpen, setIsTerminalOpen] = useState(false);
@@ -23,7 +21,8 @@ export default function HeroSection() {
         <div>
           <div className="max-w-2xl">
             <h1 className="text-5xl text-text-primary font-bold leading-tight mb-5">
-              Hola, soy <span className="text-text-title-section">Andrés Garcés</span>
+              Hola, soy{" "}
+              <span className="text-text-title-section">Andrés Garcés</span>
             </h1>
             <h2 className="text-3xl text-text-secondary">
               Software Engineer · FullStack Developer
@@ -70,102 +69,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="w-full max-w-lg overflow-hidden rounded-2xl border border-slate-700 bg-[#0D1117] shadow-2xl ">
-        <div className="flex items-center justify-between border-b border-slate-700 bg-[#161B22] px-5 py-3">
-          <div className="flex items-center gap-2">
-            <HugeiconsIcon
-              icon={CircleDot}
-              size={12}
-              fill="#ef4444"
-              className="text-danger"
-            />
-            <HugeiconsIcon
-              icon={CircleDot}
-              size={12}
-              fill="#f59e0b"
-              className="text-warning"
-            />
-            <HugeiconsIcon
-              icon={CircleDot}
-              size={12}
-              fill="#22c55e"
-              className="text-success"
-            />
-          </div>
-          <span className="text-xs tracking-wider text-slate-400 uppercase">
-            profile.sh
-          </span>
-          <HugeiconsIcon
-            icon={SquareIcon}
-            size={12}
-            className="text-transparent"
-          />
-        </div>
-        <div className="space-y-1 p-6 font-mono text-sm leading-7">
-          <div>
-            <span className="text-cyan-400">$</span>{" "}
-            <span className="text-slate-300">whoami</span>
-          </div>
-          <p className="text-white">Andrés David Garcés Castro</p>
-          <div>
-            <span className="text-cyan-400">$</span>{" "}
-            <span className="text-slate-300">profile --help</span>
-          </div>
-          <div className="rounded-xl bg-slate-900 p-4">
-            <pre className="overflow-x-auto text-sm text-left">
-              {`{
-  "specialization": [
-    "Fullstack",
-    "Architecture",
-    "Cloud",
-    "Mobile"
-  ],
-
-  "focus": [
-    ".NET",
-    "Spring Boot",
-    "Web Applications",
-    "API Design"
-  ],
-
-  "status": "Open To Work"
-}`}
-            </pre>
-          </div>
-
-          <div>
-            <span className="text-cyan-400">$</span>{" "}
-            <span className="text-slate-300">skills --top</span>
-          </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            <Skill name=".NET" />
-            <Skill name="React" />
-            <Skill name="Spring Boot" />
-            <Skill name="Angular" />
-            <Skill name="Docker" />
-            <Skill name="SQL Server" />
-          </div>
-
-          <div>
-            <span className="text-cyan-400">$</span>{" "}
-            <span className="text-white">npm run build</span>
-          </div>
-        </div>
-      </div>
+      <TerminalHero />
     </section>
-  );
-}
-
-interface SkillProps {
-  name: string;
-}
-
-function Skill({ name }: SkillProps) {
-  return (
-    <div className="flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2">
-      <HugeiconsIcon icon={CheckCircle} size={16} className="text-green-400" />
-      <span className="text-slate-300">{name}</span>
-    </div>
   );
 }
